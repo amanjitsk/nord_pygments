@@ -31,9 +31,9 @@ class AnsiStyle(Style):
     highlight_color = "ansibrightblack"
 
     styles = {
-        Comment:            "italic ansibrightblack",
+        Comment:            "ansigreen",
         Comment.PreProc:    "ansicyan",
-        Comment.Special:    "bold italic ansigray",
+        Comment.Special:    "bold ansiyellow",
         Keyword:            "bold ansiblue",
         Keyword.Pseudo:     "nobold ansiblue",
         Keyword.Type:       "nobold ansiblue",
