@@ -49,7 +49,7 @@ class NordStyle(Style):
 
     styles = {
         Whitespace: nord4,
-        Comment: nord3_bright,
+        Comment: f"italic {nord3_bright}",
         Comment.Preproc: nord10,
         Keyword: f"bold {nord9}",
         Keyword.Pseudo: f"nobold {nord9}",
