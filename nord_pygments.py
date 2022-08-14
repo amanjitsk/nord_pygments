@@ -8,6 +8,7 @@ License: BSD-3 Clause License. See LICENSE for details
 
 from pygments.style import Style
 from pygments.token import (
+    Token,
     Keyword,
     Name,
     Comment,
@@ -45,12 +46,14 @@ nord15 = "#b48ead"
 
 class NordStyle(Style):
     background_color = nord0
-    default = nord4
+    highlight_color = nord4
 
     styles = {
+        Token: nord5,
         Whitespace: nord4,
         Comment: f"italic {nord3_bright}",
         Comment.Preproc: nord10,
+        Comment.Special: f"bold {nord4}",
         Keyword: f"bold {nord9}",
         Keyword.Pseudo: f"nobold {nord9}",
         Keyword.Type: f"nobold {nord9}",
@@ -71,7 +74,7 @@ class NordStyle(Style):
         Name.Decorator: nord12,
         Punctuation: nord6,
         String: nord14,
-        String.Doc: nord3_bright,
+        String.Doc: nord4,
         String.Interpol: nord14,
         String.Escape: nord13,
         String.Regex: nord13,
